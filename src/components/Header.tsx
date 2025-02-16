@@ -86,11 +86,12 @@ export function Header() {
           >
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {[
-                { name: "Technologies", path: "/technology" },
+              
                 { name: "Agents", path: "/agents" },
                 { name: "Features", path: "/features" },
                 { name: "Analysis", path: "/analysis" },
                 { name: "Contact", path: "/#contact" },
+            { name: "Technologies", path: "/technology" }
               ].map((item) => (
                 <Link
                   key={item.name}
@@ -103,9 +104,9 @@ export function Header() {
 
               <div className="px-3 py-2">
                 <Link href="/">
-                  <button className="glow-button w-full px-6 py-2.5 rounded-full text-white font-medium text-sm transition-all">
-                    Explore AI
-                  </button>
+ <button className="px-6 py-2.5 rounded-full font-medium text-sm transition-all bg-gradient-to-r from-blue-500 to-cyan-400 hover:from-blue-600 hover:to-cyan-500 text-white shadow-lg">
+      Explore AI
+    </button>
                 </Link>
               </div>
             </div>
